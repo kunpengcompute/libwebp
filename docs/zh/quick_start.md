@@ -128,3 +128,5 @@
     ```shell
     g++ -std=c++17 -I/opt/webpInstall/include -I/opt/webpInstall/include/GraphicsMagick -I/opt/webpInstall/include/webp -L/opt/webpInstall/lib -L/opt/webpInstall/lib64 -lpng -lwebp -Wl,-rpath,/opt/webpInstall/lib64  main.cpp -o main && ./main
     ```
+
+> 预期现象：生成output.webp文件
