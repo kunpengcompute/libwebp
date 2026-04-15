@@ -20,6 +20,12 @@ LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具
 └── libwebp-1.2.1.tar.gz                   # libwebp-1.2.1源代码压缩包
 ```
 
+# 版本说明
+
+| LibWebP版本   | 特性变更    |
+| ------------ | ------------ |
+|   1.2.1    |   提供neon向量化优化
+
 ## 环境部署
 
 参考[安装指南文档](./docs/zh/installation_guide.md)。
