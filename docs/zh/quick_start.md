@@ -1,4 +1,5 @@
 # LibWebP使用示例
+
 以下将PNG格式图片转换成WebP格式的使用示例。
 
 1. 创建main.cpp文件，写入以下示例代码。
@@ -128,4 +129,4 @@
     g++ -std=c++17 -I/opt/webpInstall/include -I/opt/webpInstall/include/GraphicsMagick -I/opt/webpInstall/include/webp -L/opt/webpInstall/lib -L/opt/webpInstall/lib64 -lpng -lwebp -Wl,-rpath,/opt/webpInstall/lib64  main.cpp -o main && ./main
     ```
 
-> 预期现象：生成output.webp文件
+预期现象：生成output.webp文件。
