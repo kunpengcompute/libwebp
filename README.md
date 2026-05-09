@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-本项目为鲲鹏图像库LibWebP代码仓，使用向量优化，算法优化与流程优化等方法针对开源图像库LibWebP图片编码性能进行了优化。
+本项目为鲲鹏LibWebP代码仓，使用向量优化，算法优化与流程优化等方法针对开源LibWebP图片编码性能进行了优化。
 
 LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具备透明通道和动画功能。相比传统格式（如JPEG或PNG），LibWebP通常可以在保证视觉质量的前提下显著减小文件大小，是网页图像优化的理想选择。
 
@@ -16,17 +16,24 @@ LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具
         ├── LICENSE                        # 文档许可证
         ├── installation_guide.md          # 部署指南
         └── quick_start.md                 # demo用例
+        └── menu_installation_guide.md     # 安装导航
 ├── 0001-webp_1.2.1-optimize-v1.0.1.patch  # patch文件
 └── libwebp-1.2.1.tar.gz                   # libwebp-1.2.1源代码压缩包
 ```
 
+## 版本说明
+
+| LibWebP版本   | 特性变更    |
+| ------------ | ------------ |
+|   1.2.1    |   提供neon向量化优化|
+
 ## 环境部署
 
-参考[安装指南文档](./docs/zh/installation_guide.md)。
+LibWebP环境安装步骤详见[安装指南](./docs/zh/installation_guide.md)。
 
 ## 快速入门
 
-参考[快速入门文档](./docs/zh/quick_start.md)
+PNG格式图片转换成WebP格式为例，详见[快速入门](./docs/zh/quick_start.md)。
 
 ## 贡献指导
 

@@ -1,24 +1,30 @@
-# 部署指南
+# 鲲鹏LibWebP安装指南
 
-## 简介
+## 安装说明
 
-本文档提供了鲲鹏图像库的安装指南、使用示例，旨在帮助用户快速熟悉鲲鹏图像库的使用。
+本文主要介绍鲲鹏优化版LibWebP的安装步骤。
 
-KIL（Kunpeng Image Library，鲲鹏图像库）使用了向量优化，算法优化，流程优化等方法针对开源图像库LibWebP的图片编码性能进行了优化。
+## 环境要求
 
-LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具备透明通道和动画功能。相比传统格式（如JPEG或PNG），WebP通常可以在保证视觉质量的前提下显著减小文件大小，是网页图像优化的理想选择。
+**硬件环境**
 
-## 已验证环境
+| 项目  | 说明    |
+| ------------ | ------------ |
+| CPU | 鲲鹏920新型号处理器 |
 
-为保证您可以顺利安全地使用鲲鹏图像库，请确保所使用的环境信息在已验证环境范围内。
+**操作系统要求**
 
-**表 1**  已验证环境
+| 项目  | 版本    |
+| ------------ | ------------ |
+| OS | openEuler 22.03 LTS SP4 |
 
-|项目|说明|
-|--|--|
-|CPU型号|鲲鹏920系列处理器|
-|OS|openEuler 22.03 LTS SP4|
-|编译器|GCC 10.3.1|
+**软件环境**
+
+| 项目  | 版本    |
+| ------------ | ------------ |
+| 编译器 | GCC 10.3.1 或以上版本|
+| make | 4.3 或以上版本|
+| cmake | 3.10 或以上版本|
 
 ## 安装LibWebP
 
@@ -30,7 +36,16 @@ LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具
     yum install libpng libpng-devel make zlib-devel cmake gcc gcc-c++ zip unzip which wget expect man pcre-devel autoconf automake libtool nasm bzip2-devel libtool-ltdl-devel gettext-devel texinfo git vim zip perl-IPC-Cmd gdb file -y
     ```
 
-2. 进入libwebp源码目录，复制0001-webp_1.2.1-optimize-v1.0.1.patch到当前目录，并合入patch。
+2. 获取源码和补丁。
+
+    ```shell
+    cd /home/software/
+    git clone https://gitcode.com/boostkit/libwebp.git
+    tar -zxvf libwebp/libwebp-1.2.1.tar.gz -C ./
+    cp libwebp/0001-webp_1.2.1-optimize-v1.0.1.patch libwebp-1.2.1/
+    ```
+
+3. 进入libwebp源码目录，并合入patch。
 
     ```shell
     cd /home/software/libwebp-1.2.1/
@@ -39,7 +54,7 @@ LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具
     git apply 0001-webp_1.2.1-optimize-v1.0.1.patch
     ```
 
-3. 切换到"/home/software"目录下，将以下代码保存到build.sh脚本中。
+4. 切换到"/home/software"目录下，将以下代码保存到build.sh脚本中。
 
     ```shell
     #!/bin/bash
@@ -53,13 +68,13 @@ LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具
     make -j8 && make install && popd && popd \
     ```
 
-4. 执行脚本，等待脚本执行完成。
+5. 执行脚本，等待脚本执行完成。
 
     ```shell
     sh build.sh
     ```
 
-5. 验证是否安装成功。
+6. 验证是否安装成功。
 
     ```shell
     export LD_LIBRARY_PATH=/opt/webpInstall/lib/:/opt/webpInstall/lib64/:$LD_LIBRARY_PATH
