@@ -2,30 +2,28 @@
 
 ## 项目简介
 
-本项目为鲲鹏LibWebP代码仓，使用向量优化，算法优化与流程优化等方法针对开源LibWebP图片编码性能进行了优化。
-
+本项目为鲲鹏LibWebP代码仓，使用向量优化、算法优化与流程优化等方法针对开源LibWebP图片编码性能进行了优化。  
 LibWebP是WebP图像格式的官方库，它支持有损和无损压缩，并具备透明通道和动画功能。相比传统格式（如JPEG或PNG），LibWebP通常可以在保证视觉质量的前提下显著减小文件大小，是网页图像优化的理想选择。
 
 ## 目录结构
 
-```shell
-├── README.md                              # 项目说明文档
-├── LICENSE                                # 文档许可证
+```text
 ├── docs                                   # 项目文档目录
-│   └── zh                                 # 中文文档目录
-        ├── LICENSE                        # 文档许可证
-        ├── installation_guide.md          # 部署指南
-        └── quick_start.md                 # demo用例
-        └── menu_installation_guide.md     # 安装导航
+│   └── zh                                 # 中文文档目录           
+        ├── installation_guide.md          # 安装指南
+        ├── quick_start.md                 # 快速入门  
+        └── LICENSE                        # 文档许可证   
 ├── 0001-webp_1.2.1-optimize-v1.0.1.patch  # patch文件
-└── libwebp-1.2.1.tar.gz                   # libwebp-1.2.1源代码压缩包
+├── libwebp-1.2.1.tar.gz                   # libwebp-1.2.1源代码压缩包
+├── LICENSE                                # 开源许可证
+└── README.md                              # 项目说明文档
 ```
 
 ## 版本说明
 
 | LibWebP版本   | 特性变更    |
 | ------------ | ------------ |
-|   1.2.1    |   提供neon向量化优化|
+|   1.2.1    |   提供neon向量化优化。|
 
 ## 环境部署
 
@@ -35,14 +33,21 @@ LibWebP环境安装步骤详见[安装指南](./docs/zh/installation_guide.md)�
 
 PNG格式图片转换成WebP格式为例，详见[快速入门](./docs/zh/quick_start.md)。
 
-## 贡献指导
+## 学习文档
+|文档名称|文档简介|
+|--|--|
+|[安装指南](docs/zh/installation_guide.md)|提供LibWebP源码编译安装的详细指导。|
+|[快速入门](docs/zh/quick_start.md)|提供LibWebP快速使能并验证加速能力的快速入门指导。|
 
-如果使用过程中有任何问题，或者需要反馈特性需求和bug报告，可以提交issue联系我们，具体贡献方法可参考[这里](https://gitcode.com/boostkit/community/blob/master/docs/contributor/contributing.md)。
+## 贡献声明
+欢迎大家为社区做贡献，如果使用过程中有任何问题/建议，或者需要反馈特性需求和bug报告，可以提交[Issues](https://gitcode.com/boostkit/community/blob/master/docs/contributor/issue-submit.md)联系我们，具体贡献方法可参考[这里](https://gitcode.com/boostkit/community/blob/master/docs/contributor/contributing.md)。同时也欢迎大家在[讨论专区](https://gitcode.com/boostkit/community/discussions)展开讨论交流。感谢您的支持。
 
 ## 免责声明
 
 此代码仓基于LibWebP开源代码提供patch，仅作LibWebP图片编码性能提升，编码风格遵照原生开源软件，继承原生开源软件安全设计，不破坏原生开源软件设计及编码风格和方式，软件的任何漏洞与安全问题，均由相应的上游社区根据其漏洞和安全响应机制解决。请密切关注上游社区发布的通知和版本更新。鲲鹏计算社区对软件的漏洞及安全问题不承担任何责任。
 
-## 许可证书
+## License
 
-本项目采用BSD 3-Clause 许可证，详见[LICENSE文件](./LICENSE)。本项目文档使用CC-BY 4.0许可证，详见[LICENSE文件](./docs/zh/LICENSE)。
+本项目采用BSD 3-Clause 许可证，详见[LICENSE文件](./LICENSE)。  
+本项目文档使用CC-BY 4.0许可证，详见[LICENSE文件](./docs/zh/LICENSE)。
+
