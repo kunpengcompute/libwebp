@@ -34,12 +34,14 @@ LibWebP环境安装步骤详见[安装指南](./docs/zh/installation_guide.md)�
 PNG格式图片转换成WebP格式为例，详见[快速入门](./docs/zh/quick_start.md)。
 
 ## 学习文档
+
 |文档名称|文档简介|
 |--|--|
 |[安装指南](docs/zh/installation_guide.md)|提供LibWebP源码编译安装的详细指导。|
 |[快速入门](docs/zh/quick_start.md)|提供LibWebP快速使能并验证加速能力的快速入门指导。|
 
 ## 贡献声明
+
 欢迎大家为社区做贡献，如果使用过程中有任何问题/建议，或者需要反馈特性需求和bug报告，可以提交[Issues](https://gitcode.com/boostkit/community/blob/master/docs/contributor/issue-submit.md)联系我们，具体贡献方法可参考[这里](https://gitcode.com/boostkit/community/blob/master/docs/contributor/contributing.md)。同时也欢迎大家在[讨论专区](https://gitcode.com/boostkit/community/discussions)展开讨论交流。感谢您的支持。
 
 ## 免责声明
