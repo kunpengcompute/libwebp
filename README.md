@@ -1,5 +1,7 @@
 # LibWebP
 
+本文档介绍鲲鹏LibWebP代码仓，说明其对开源LibWebP图片编码性能的向量优化、算法优化与流程优化成果，以及环境部署、快速入门与学习文档，适用于需要优化网页图像编码性能的用户。
+
 ## 项目简介
 
 本项目为鲲鹏LibWebP代码仓，使用向量优化、算法优化与流程优化等方法针对开源LibWebP图片编码性能进行了优化。  
@@ -42,7 +44,7 @@ PNG格式图片转换成WebP格式为例，详见[快速入门](./docs/zh/quick_
 
 ## 贡献声明
 
-欢迎大家为社区做贡献，如果使用过程中有任何问题/建议，或者需要反馈特性需求和bug报告，可以提交[Issues](https://gitcode.com/boostkit/community/blob/master/docs/contributor/issue-submit.md)联系我们，具体贡献方法可参考[这里](https://gitcode.com/boostkit/community/blob/master/docs/contributor/contributing.md)。同时也欢迎大家在[讨论专区](https://gitcode.com/boostkit/community/discussions)展开讨论交流。感谢您的支持。
+欢迎大家为社区做贡献，如果使用过程中有任何问题/建议，或者需要反馈特性需求和bug报告，可以提交[Issues](https://gitcode.com/boostkit/community/blob/master/docs/contributor/issue-submit.md)联系我们，具体贡献方法可参考[贡献指南](https://gitcode.com/boostkit/community/blob/master/docs/contributor/contributing.md)。同时也欢迎大家在[讨论专区](https://gitcode.com/boostkit/community/discussions)展开讨论交流。感谢您的支持。
 
 ## 免责声明
 
@@ -53,3 +55,8 @@ PNG格式图片转换成WebP格式为例，详见[快速入门](./docs/zh/quick_
 本项目采用BSD 3-Clause 许可证，详见[LICENSE文件](./LICENSE)。  
 本项目文档使用CC-BY 4.0许可证，详见[LICENSE文件](./docs/zh/LICENSE)。
 
+## 修订记录
+
+| 文档版本 | 发布日期 | 修改说明 |
+| --- | --- | --- |
+| 01 | 2025-9-30 | 第一次正式发布。 |
